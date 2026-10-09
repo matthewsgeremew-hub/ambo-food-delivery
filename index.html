@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ambo Campus Delivery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <div class="status-bar">
+        <span>9:41</span>
+        <div class="status-icons" aria-label="connection and battery status">
+          <span class="dot green"></span>
+          <span class="dot yellow"></span>
+          <span class="dot red"></span>
+        </div>
+      </div>
+
+      <header class="topbar">
+        <div class="brand-wrap">
+          <div class="brand-mark">A</div>
+          <div>
+            <small>Ambo University</small>
+            <strong>Main Campus</strong>
+          </div>
+        </div>
+        <button class="icon-btn" aria-label="notifications">🔔</button>
+      </header>
+
+      <nav class="role-switcher" aria-label="Role switcher">
+        <button class="role-btn active" data-role="student">Student</button>
+        <button class="role-btn" data-role="courier">Courier</button>
+        <button class="role-btn" data-role="admin">Admin</button>
+      </nav>
+
+      <main>
+        <section class="screen active" id="student-screen">
+          <div class="hero-card">
+            <div class="hero-topline">
+              <span>Good morning, Abel</span>
+              <span>ETB 1,450</span>
+            </div>
+            <h1>Craving something near your block?</h1>
+            <p>Fresh food, coffee, and daily essentials delivered fast across campus.</p>
+            <div class="location-pill">📍 Block C • Gate 2 • Main Campus</div>
+          </div>
+
+          <div class="search-box">
+            <span class="search-icon">⌕</span>
+            <input type="text" value="Search restaurants, coffee, tea..." aria-label="Search" />
+          </div>
+
+          <div class="chip-row">
+            <button class="chip active">All</button>
+            <button class="chip">Fast Food</button>
+            <button class="chip">Cafe</button>
+            <button class="chip">Tea House</button>
+            <button class="chip">Healthy</button>
+          </div>
+
+          <div class="section-header">
+            <h2>Restaurants near you</h2>
+            <span>12 open now</span>
+          </div>
+
+          <div class="restaurant-list">
+            <article class="restaurant-card">
+              <div class="restaurant-image image-one">
+                <span class="badge">Popular</span>
+              </div>
+              <div class="restaurant-body">
+                <div class="row-between">
+                  <h3>Beke Cafe</h3>
+                  <span class="rating">★ 4.8</span>
+                </div>
+                <div class="row-between muted-row">
+                  <span>Coffee • Tea • Breakfast</span>
+                  <span>15–25 min</span>
+                </div>
+                <div class="card-actions">
+                  <button class="btn-light">View menu</button>
+                  <button class="btn-primary">Order now</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="restaurant-card">
+              <div class="restaurant-image image-two">
+                <span class="badge">Top Rated</span>
+              </div>
+              <div class="restaurant-body">
+                <div class="row-between">
+                  <h3>Mekelle Bite</h3>
+                  <span class="rating">★ 4.9</span>
+                </div>
+                <div class="row-between muted-row">
+                  <span>Fast Food • Grill</span>
+                  <span>20–30 min</span>
+                </div>
+                <div class="card-actions">
+                  <button class="btn-light">View menu</button>
+                  <button class="btn-primary">Order now</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="restaurant-card">
+              <div class="restaurant-image image-three">
+                <span class="badge">Healthy</span>
+              </div>
+              <div class="restaurant-body">
+                <div class="row-between">
+                  <h3>Green Corner</h3>
+                  <span class="rating">★ 4.7</span>
+                </div>
+                <div class="row-between muted-row">
+                  <span>Salads • Smoothies</span>
+                  <span>12–20 min</span>
+                </div>
+                <div class="card-actions">
+                  <button class="btn-light">View menu</button>
+                  <button class="btn-primary">Order now</button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <section class="detail-panel">
+            <div class="detail-banner"></div>
+            <div class="detail-body">
+              <div class="title-row">
+                <div>
+                  <h2>Mekelle Bite</h2>
+                  <div class="muted-row">
+                    <span>Grill • Pasta • Burger</span>
+                    <span>★ 4.9</span>
+                  </div>
+                </div>
+                <button class="btn-ghost">Open</button>
+              </div>
+
+              <div class="menu-list">
+                <div class="menu-item">
+                  <div class="menu-thumb thumb-one"></div>
+                  <div class="menu-copy">
+                    <div class="menu-name-row">
+                      <strong>Special Doro Wet</strong>
+                      <span class="price">ETB 220</span>
+                    </div>
+                    <p>Chicken stew, injera, peppers, and fresh salad.</p>
+                    <div class="menu-controls">
+                      <div class="qty-control">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="menu-item">
+                  <div class="menu-thumb thumb-two"></div>
+                  <div class="menu-copy">
+                    <div class="menu-name-row">
+                      <strong>Chicken Burger Deluxe</strong>
+                      <span class="price">ETB 180</span>
+                    </div>
+                    <p>Cheese, lettuce, tomato, and crunchy fries.</p>
+                    <div class="menu-controls">
+                      <div class="qty-control">
+                        <button>-</button>
+                        <span>0</span>
+                        <button>+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="menu-item">
+                  <div class="menu-thumb thumb-three"></div>
+                  <div class="menu-copy">
+                    <div class="menu-name-row">
+                      <strong>Cold Coffee</strong>
+                      <span class="price">ETB 95</span>
+                    </div>
+                    <p>Caramel iced latte with oat milk and ice.</p>
+                    <div class="menu-controls">
+                      <div class="qty-control">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="note-box">
+                <h3>Delivery note</h3>
+                <textarea rows="3" aria-label="delivery instructions">Deliver to Block C Room 12, Gate 2. Please ring the bell twice.</textarea>
+              </div>
+
+              <div class="cart-box">
+                <div class="line-item"><span>Special Doro Wet</span><span>ETB 220</span></div>
+                <div class="line-item"><span>Cold Coffee</span><span>ETB 95</span></div>
+                <div class="line-item"><span>Delivery</span><span>ETB 25</span></div>
+                <div class="total-row"><strong>Total</strong><strong>ETB 340</strong></div>
+              </div>
+
+              <div class="section-header compact">
+                <h2>Payment</h2>
+              </div>
+
+              <div class="payment-options">
+                <button class="payment-option active" type="button">
+                  <span class="radio"><span></span></span>
+                  <span>Telebirr</span>
+                </button>
+                <button class="payment-option" type="button">
+                  <span class="radio"><span></span></span>
+                  <span>CBE Birr</span>
+                </button>
+                <button class="payment-option" type="button">
+                  <span class="radio"><span></span></span>
+                  <span>CBE Direct Transfer</span>
+                </button>
+                <button class="payment-option" type="button">
+                  <span class="radio"><span></span></span>
+                  <span>Cash on Delivery</span>
+                </button>
+              </div>
+
+              <div class="input-group">
+                <input type="text" value="Transaction Reference: TBR-2381457" aria-label="Transaction reference" />
+              </div>
+
+              <label class="upload-box">
+                <span>Upload payment screenshot</span>
+                <span class="upload-icon">⤴</span>
+                <input type="file" />
+              </label>
+
+              <div class="action-row">
+                <button class="btn-light">Save for later</button>
+                <button class="btn-primary">Place Order</button>
+              </div>
+            </div>
+          </section>
+
+          <div class="section-header compact">
+            <h2>Order tracking</h2>
+          </div>
+
+          <div class="tracking-list">
+            <div class="track-item done">
+              <div class="step-dot"></div>
+              <div class="track-card">
+                <strong>Pending Approval</strong>
+                <small>Order confirmed and reviewed by merchant.</small>
+                <span class="track-badge approved">Approved</span>
+              </div>
+            </div>
+
+            <div class="track-item active">
+              <div class="step-dot"></div>
+              <div class="track-card">
+                <strong>Preparing</strong>
+                <small>Kitchen is cooking your order.</small>
+                <span class="track-badge pending">In progress</span>
+              </div>
+            </div>
+
+            <div class="track-item">
+              <div class="step-dot"></div>
+              <div class="track-card">
+                <strong>Picked Up</strong>
+                <small>Courier has left the restaurant.</small>
+              </div>
+            </div>
+
+            <div class="track-item">
+              <div class="step-dot"></div>
+              <div class="track-card">
+                <strong>Delivered</strong>
+                <small>Estimated arrival at Block C, Gate 2.</small>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="screen" id="courier-screen">
+          <div class="section-header compact top-gap">
+            <h2>Courier dashboard</h2>
+            <span class="online-pill">Online</span>
+          </div>
+
+          <div class="availability-card">
+            <div>
+              <strong>Availability</strong>
+              <small>Ready to receive orders</small>
+            </div>
+            <button class="toggle-switch on" type="button" aria-label="Toggle availability"></button>
+          </div>
+
+          <div class="section-header compact">
+            <h2>Incoming orders</h2>
+            <span>3 active</span>
+          </div>
+
+          <div class="order-stack">
+            <div class="order-card">
+              <div class="order-head">
+                <strong>#A021</strong>
+                <span class="status-tag new">NEW</span>
+              </div>
+              <div class="order-copy">
+                <span>Student: Yohannes T.</span>
+                <span>Drop-off: Block B, Gate 1 • Science Library</span>
+                <span>Order: Doro Wet + Coffee</span>
+                <span>Distance: 1.2 km • ETB 95</span>
+              </div>
+              <div class="order-actions row-two">
+                <button class="btn-primary">Accept</button>
+                <button class="btn-danger">Reject</button>
+              </div>
+              <div class="order-actions row-two">
+                <button class="btn-call">Call</button>
+                <button class="btn-whatsapp">WhatsApp</button>
+              </div>
+            </div>
+
+            <div class="order-card">
+              <div class="order-head">
+                <strong>#A017</strong>
+                <span class="status-tag new">NEW</span>
+              </div>
+              <div class="order-copy">
+                <span>Student: Sara A.</span>
+                <span>Drop-off: Female Dorm • Gate 3</span>
+                <span>Order: Burger + Smoothie</span>
+                <span>Distance: 0.9 km • ETB 70</span>
+              </div>
+              <div class="order-actions row-two">
+                <button class="btn-primary">Accept</button>
+                <button class="btn-danger">Reject</button>
+              </div>
+              <div class="order-actions row-two">
+                <button class="btn-call">Call</button>
+                <button class="btn-whatsapp">WhatsApp</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-header compact">
+            <h2>Earnings</h2>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-box">
+              <strong>18</strong>
+              <span>Completed</span>
+            </div>
+            <div class="stat-box">
+              <strong>ETB 3,420</strong>
+              <span>Net payout</span>
+            </div>
+            <div class="stat-box">
+              <strong>4.8</strong>
+              <span>Rating</span>
+            </div>
+            <div class="stat-box">
+              <strong>92%</strong>
+              <span>On time</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="screen" id="admin-screen">
+          <div class="section-header compact top-gap">
+            <h2>System overview</h2>
+            <span>Live</span>
+          </div>
+
+          <div class="admin-grid">
+            <div class="admin-card">
+              <strong>Daily orders</strong>
+              <div class="metric">256</div>
+            </div>
+            <div class="admin-card">
+              <strong>Revenue</strong>
+              <div class="metric">ETB 41k</div>
+            </div>
+            <div class="admin-card">
+              <strong>Active couriers</strong>
+              <div class="metric">18</div>
+            </div>
+            <div class="admin-card">
+              <strong>Open disputes</strong>
+              <div class="metric">05</div>
+            </div>
+          </div>
+
+          <div class="section-header compact">
+            <h2>Merchant management</h2>
+          </div>
+
+          <div class="list-card">
+            <div class="list-item">
+              <div>
+                <strong>Beke Cafe</strong>
+                <small>Coffee • Breakfast</small>
+              </div>
+              <div class="list-actions">
+                <span class="list-badge success">Visible</span>
+                <button class="btn-ghost small">Edit</button>
+              </div>
+            </div>
+
+            <div class="list-item">
+              <div>
+                <strong>Mekelle Bite</strong>
+                <small>Fast food • Grill</small>
+              </div>
+              <div class="list-actions">
+                <span class="list-badge success">Visible</span>
+                <button class="btn-ghost small">Edit</button>
+              </div>
+            </div>
+
+            <div class="list-item">
+              <div>
+                <strong>Green Corner</strong>
+                <small>Healthy • Smoothies</small>
+              </div>
+              <div class="list-actions">
+                <span class="list-badge danger">Hidden</span>
+                <button class="btn-ghost small">Edit</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-header compact">
+            <h2>Courier management</h2>
+          </div>
+
+          <div class="list-card">
+            <div class="list-item">
+              <div>
+                <strong>Abdisa D.</strong>
+                <small>On duty • 4.8 rating</small>
+              </div>
+              <button class="toggle-switch on" type="button" aria-label="Courier availability"></button>
+            </div>
+
+            <div class="list-item">
+              <div>
+                <strong>Meseret G.</strong>
+                <small>Paused • 4.7 rating</small>
+              </div>
+              <button class="toggle-switch" type="button" aria-label="Courier availability"></button>
+            </div>
+
+            <div class="list-item">
+              <div>
+                <strong>Samuel H.</strong>
+                <small>Banned • isBanned=true</small>
+              </div>
+              <button class="toggle-switch" type="button" aria-label="Courier availability"></button>
+            </div>
+          </div>
+
+          <div class="section-header compact">
+            <h2>Verification</h2>
+          </div>
+
+          <div class="list-card">
+            <div class="list-item">
+              <div>
+                <strong>Order #A045</strong>
+                <small>Telebirr Ref: TBR-2381457</small>
+              </div>
+              <div class="list-actions">
+                <button class="btn-ghost small">View</button>
+                <span class="list-badge success">Approve</span>
+              </div>
+            </div>
+
+            <div class="list-item">
+              <div>
+                <strong>Order #A041</strong>
+                <small>CBE screenshot pending review</small>
+              </div>
+              <div class="list-actions">
+                <button class="btn-ghost small">Review</button>
+                <span class="list-badge danger">Reject</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
